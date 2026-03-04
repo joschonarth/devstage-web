@@ -21,6 +21,8 @@
 
 ---
 
+<img width="1366" height="645" alt="devstage-home" src="https://github.com/user-attachments/assets/35fcd7e5-5ad0-4772-ab1a-a6731fdbad55" />
+
 ---
 
 ## 📃 Sobre
