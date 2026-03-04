@@ -1,34 +1,130 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
 
-## Getting Started
+<img alt="devstage" src="./src/assets/logo.svg" />
 
-First, run the development server:
+# devstage
+
+*Indique, convide e suba no ranking.*
+
+<img src="https://img.shields.io/github/last-commit/joschonarth/devstage-web?style=default&logo=git&logoColor=white&color=6F9DE2&labelColor=27272a" alt="last-commit">
+<img src="https://img.shields.io/github/languages/top/joschonarth/devstage-web?style=default&color=6F9DE2&labelColor=27272a" alt="repo-top-language">
+<img src="https://img.shields.io/github/languages/count/joschonarth/devstage-web?style=default&color=6F9DE2&labelColor=27272a" alt="repo-language-count">
+
+---
+
+📃 [Sobre](#-sobre)&nbsp;&nbsp;•&nbsp;&nbsp;
+🛠️ [Tecnologias](#️-tecnologias)&nbsp;&nbsp;•&nbsp;&nbsp;
+✨ [Funcionalidades](#-funcionalidades)&nbsp;&nbsp;•&nbsp;&nbsp;
+🚀 [Como rodar](#-como-rodar)
+
+</div>
+
+---
+
+---
+
+## 📃 Sobre
+
+O **devstage** é uma aplicação web de sistema de indicações e convites para eventos. Após se cadastrar em um evento, cada participante recebe um link único de convite para compartilhar. A cada nova inscrição gerada através do link, o usuário acumula pontos e sobe no ranking global — podendo acompanhar em tempo real quantos acessos seu link recebeu, quantas inscrições foram feitas e sua posição no ranking de indicações. O frontend é construído com **Next.js**, **TypeScript** e **Tailwind CSS**.
+
+---
+
+## 🛠️ Tecnologias
+
+- ⚛️ **[React](https://react.dev/)** — Biblioteca para construção de interfaces declarativas.
+- ▲ **[Next.js](https://nextjs.org/)** — Framework React com App Router, SSR e otimizações de performance.
+- 🟦 **[TypeScript](https://www.typescriptlang.org/)** — Tipagem estática e segurança em tempo de desenvolvimento.
+- 🎨 **[Tailwind CSS](https://tailwindcss.com/)** — Estilização utilitária direto no JSX.
+- 🐠 **[Orval](https://orval.dev/)** — Geração automática de clients HTTP e tipos a partir da spec OpenAPI.
+- 📋 **[React Hook Form](https://react-hook-form.com/)** — Gerenciamento de formulários performático e flexível.
+- 🛡️ **[Zod](https://zod.dev/)** — Validação e parsing de schemas com inferência de tipos.
+- 🔍 **[Biome](https://biomejs.dev/)** — Linting e formatação de código de alta performance.
+
+---
+
+## ✨ Funcionalidades
+
+- [x] 📝 Inscrição em eventos
+- [x] 🔗 Geração de link único de convite por participante
+- [x] 👥 Convite de novas pessoas através do link personalizado
+- [x] 📊 Estatísticas de acessos ao link de convite
+- [x] 🎯 Contagem de inscrições geradas pelo link
+- [x] 🏆 Posição do usuário no ranking de indicações
+- [x] 🌍 Ranking global de indicações
+
+---
+
+## 🚀 Como rodar
+
+### 📋 Pré-requisitos
+
+- 🟩 [Node.js 18+](https://nodejs.org/)
+- 📦 [npm](https://www.npmjs.com/)
+- 🔌 API do **devstage** em execução — veja o repositório: **[devstage-server](https://github.com/joschonarth/devstage-server)**
+
+### 🔧 Instalação
+
+1. Clone o repositório:
+
+    ```bash
+    git clone https://github.com/joschonarth/devstage-web.git
+    ```
+
+2. Acesse a pasta do projeto:
+
+    ```bash
+    cd devstage-web
+    ```
+
+3. Instale as dependências:
+
+    ```bash
+    npm install
+    ```
+
+### 🔌 API
+
+Este projeto consome a **devstage API**, que precisa estar disponível para que a aplicação funcione corretamente. Siga as instruções do repositório abaixo para rodá-la:
+
+👉 **[devstage-server](https://github.com/joschonarth/devstage-server)**
+
+### 🤖 Geração de cliente HTTP
+
+Os clients HTTP são gerados automaticamente pelo **Orval** a partir da spec OpenAPI exposta pelo server. Para regenerar:
+
+```bash
+npx orval
+```
+
+### ▶️ Execução
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Acesse **[http://localhost:3000](http://localhost:3000)** no navegador.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+# Gera o build de produção
+npm run build
 
-## Learn More
+# Inicia o servidor de produção
+npm run start
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ⭐ Apoie este Projeto
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Se curtiu o projeto, deixe uma ⭐ aqui no GitHub — isso ajuda muito!
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<div align="center">
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Feito com ♥ por **[João Otávio Schonarth](https://github.com/joschonarth)**
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/joschonarth)
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:joschonarth@gmail.com)
+
+</div>
