@@ -2,7 +2,7 @@
 
 <img alt="devstage" src="./src/assets/logo.svg" />
 
-# devstage
+# 📨 devstage
 
 *Indique, convide e suba no ranking.*
 
